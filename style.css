@@ -111,10 +111,6 @@ figure{
     max-width: 100%;
 }
 
-.skill-2 img{
-    max-width: 100%;
-}
-
 h2{
     margin:5px 0;
 }
@@ -151,4 +147,70 @@ footer{
 .footer-icon a{
     color: #fff;
     margin: 3px;
+}
+
+/* Tablets phone design */
+@media screen  and (min-width:48rem) and (max-width:50rem){
+    /* hamburger menu */
+    #nav-menu{
+        height: 350px;
+        width: 100%;
+        background: lightgray;
+        position: absolute;
+        top: 36%;
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+    }
+
+    #nav-menu{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 10%;
+        display: none;
+    }
+
+    .menu-icon{
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        top: -13px;
+        right: 3%;
+        padding-top: 18px;
+        padding-left: 12px;
+        background-color: white;
+    }
+
+    .bar{
+        width: 28px;
+        background: #000;
+        height: 4px;
+        margin: 3px 2px;
+    }
+
+    .user_icon{
+        position: absolute;
+        top: -33px;
+        right: 60px;
+    }
+    
+    /* hero section */
+    .lead{
+        width: 70%;
+    }
+
+    /* skill section */
+    .skill{
+        margin-top: 12rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .skill-2{
+        margin-top: 4rem;
+    }
+    
+    figure{
+        flex: 1;
+    } 
 }
