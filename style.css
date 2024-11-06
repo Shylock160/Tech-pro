@@ -214,3 +214,74 @@ footer{
         flex: 1;
     } 
 }
+
+/* Phone design */
+@media screen  and (max-width:600px){
+    /* hamburger menu */
+    #nav-menu{
+        height: 350px;
+        width: 100%;
+        background: lightgray;
+        position: absolute;
+        top: 35%;
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+    }
+
+    #nav-menu{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 10%;
+        display: none;
+    }
+
+    .menu-icon{
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        top: -13px;
+        right: 3%;
+        padding-top: 18px;
+        padding-left: 12px;
+        background-color: white;
+    }
+
+    .bar{
+        width: 28px;
+        background: #000;
+        height: 4px;
+        margin: 3px 2px;
+    }
+
+    .user_icon{
+        position: absolute;
+        top: -33px;
+        right: 60px;
+    }
+    
+    /* hero section */
+    .lead{
+        width: 90%;
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+
+    /* skill section */
+    .skill{
+        flex-direction: column;
+        margin-top: 14rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .skill-2{
+        margin-top: 4rem;
+    }
+
+    figure{
+        max-width: 100%;
+    }
+}
